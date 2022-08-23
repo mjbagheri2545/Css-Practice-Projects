@@ -1,0 +1,372 @@
+header
+{
+  margin: 0;
+}
+header nav
+{
+   padding: 0 25px;
+}
+header nav ul
+{
+   padding: 0;
+   display: flex;
+   align-items: center;
+   gap: 25px;
+   margin: 15px;
+}
+header nav ul li
+{
+   list-style: none;
+}
+header nav ul li a
+{
+   color: #000;
+}
+header nav ul li a i
+{
+    font-size: 1.3em;
+}
+header nav ul .register-login
+{
+    margin-right: auto;
+    border-radius: 4px;
+    border: 1px solid #57575f;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul .register-login a
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header nav ul .register-login a i
+{
+   font-size: 1.2em;
+}
+
+   /* main */
+
+   /* products-sec-one  */
+
+main
+{
+   font-size: 1em;
+}
+main .products-sec-one .row
+{
+   font-size: 1em;
+   margin: 40px;
+   display: flex;
+   align-items: center;
+}
+.shopping-card
+{
+   position: relative;
+   object-fit: cover;
+   width: 95%;
+   box-shadow: -3px 4px 6px rgba(0, 0, 0, 0.3);
+   margin: 30px 10px;
+   border-radius: 5px;
+}
+.shopping-card .special-offer
+{
+   position: absolute;
+   top: 15px;
+   right: 5%;
+   border-radius: 4px;
+   background-color: #e85c00;
+   color: #fff;
+   padding: 4px 8px;
+   z-index: 1;
+}
+.shopping-card .stars
+{
+   position: absolute;
+   top: 15px;
+   left: 25px;
+   color: #f2da00;
+   font-size: 1.1em;
+   z-index: 1;
+}
+.shopping-card img
+{
+   margin-top: 30px;
+   width: 80%;
+   display: block;
+   margin: 0 auto;
+   transition: 0.5s;
+}
+.shopping-card img:hover
+{
+   transform: scale(1.1);
+}
+.shopping-card .details
+{
+   margin-top: 20px;
+   display: block;
+   text-align: center;
+}
+.shopping-card .shop
+{
+   margin-top: 15px;
+   padding-bottom: 15px;
+   display: flex;
+   align-items: center;
+}
+.shopping-card .shop .price
+{
+   margin-left: auto;
+   margin-right: 10px;
+   font-size: 1.2em;
+}
+.shopping-card .shop a
+{
+   position: relative;
+   margin-left: 10px;
+   background-color: green;
+   color: #fff;
+   border-radius: 25px;
+   height: 30px;
+   width: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   overflow: hidden;
+   transition: 0.5s;
+   gap: 5px;
+}
+.shopping-card .shop a:hover
+{
+   width: 85px;
+}
+.shopping-card .shop a span
+{
+   position: absolute;
+   top: 50%;
+   left: 35px;
+   width: 40px;
+   transform: translateY(-50%);
+   color: #fff;
+   z-index: 1;
+   text-align: right;
+}
+.shopping-card .shop a i
+{
+   transform: translateX(6px);
+}
+.shopping-card .shop a:nth-child(2) i
+{
+   transform: translateX(7px);
+}
+
+   /* supper-product-sec */
+   
+.supper-product-sec
+{
+   box-sizing: border-box;
+   font-size: 1em;
+}
+.supper-product-sec .row
+{
+   margin: 40px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.supper-product-sec .row .col-xs-6
+{
+   order: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.supper-product-sec .row .col-xs-12
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.supper-product-sec .img-container
+{
+  width: 100%;
+  margin-left: 40px;
+  position: relative;
+  margin-right: 20px;
+}
+.supper-product-sec .img-container img
+{
+   display: block;
+   margin: 0 auto;
+   width: 95%;
+}
+.supper-product-sec .container
+{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   position: relative;
+   margin-right: 40px;
+   margin-left: 20px;
+   box-shadow: -2px 3px 4px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+}
+.supper-product-sec .container img
+{
+   width: 30%;
+   transition: 0.5s;
+}
+.supper-product-sec .container .details
+{
+   text-align: center;
+   margin: 10px auto;
+   width: 100%;
+}
+.supper-product-sec .container .details .price
+{
+   margin: 35px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.supper-product-sec .container .details .price span:nth-child(1)
+{
+   font-size: 1.1em;
+}
+.supper-product-sec .container .details .price .discount
+{
+   border-radius: 15px;
+   background-color: #D43D27;
+   color: #fff;
+   padding: 6px 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 35px;
+}
+.supper-product-sec .container .details .title
+{
+   font-size: 1.3em;
+   font-weight: bold;
+   display: block;
+   margin-bottom: 35px;
+}
+.supper-product-sec .container .details .line
+{
+   width: 80%;
+   height: 0.1px;
+   margin: 0 auto;
+   box-shadow: 0 0.2px 1px #57575f;
+   margin-bottom: 20px;
+}
+.supper-product-sec .container .details .counter-container .counter
+{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 14%;
+   margin: 0 auto;
+   font-size: 1.3em;
+}
+.supper-product-sec .container .details .counter-container .text
+{
+   font-size: 0.9em;
+   opacity: 0.7;
+   margin-top: 20px;
+   display: inline-block;
+}
+.supper-product-sec .container .supper-offer
+{
+   position: absolute;
+   top: 0;
+   left: 50%;
+   min-width: 180px;
+   transform: translateX(-50%);
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   background-color: #D43D27;
+   color: #fff;
+   padding: 8px 20px;
+}
+@media screen and (max-width : 991.5px)
+{
+   .supper-product-sec .row .col-xs-6
+   {
+      order: 0;
+      margin-bottom: 15px;
+   }
+}
+
+
+    /* footer */
+
+footer
+{
+   margin: 20px;
+   font-size: 1em;
+   background-color: #57575f;
+   border-radius: 5px;
+}
+footer .row
+{
+   padding: 40px 50px;
+}
+footer .right
+{
+   padding-left: 50px;
+}
+footer .right .title
+{
+   font-size: 1.1em;
+   font-weight: bold;
+   display: inline-block;
+   margin-bottom: 20px;
+   color: #fff;
+}
+footer .right .text
+{
+   opacity: 0.8;
+   color: #fff;
+   text-align: justify;
+}
+footer .left
+{
+   color: #fff;
+}
+footer .left .contact
+{
+   display: inline-block;
+   margin: 30px 0;
+   font-size: 1.2em;
+   font-weight: bold;
+   min-width: 170px;
+}
+footer .left .social-networks
+{
+   display: flex;
+   align-items: center;
+   gap: 50px;
+}
+footer .left .social-networks a
+{
+   color: #fff;
+}
+footer .left .social-networks a i
+{
+   font-size: 1.6em;
+}
+footer .copy-right
+{
+   text-align: center;
+   margin-top: 30px;
+   background-color: #2c2c30;
+   padding: 12px 0;
+   font-size: 1.1em;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

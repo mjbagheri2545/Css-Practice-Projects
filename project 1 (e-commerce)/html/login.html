@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/flexboxgrid.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="https://kit.fontawesome.com/b81d421618.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="login-page">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="login-container">
+                        <div class="hint">
+                            <p>
+                                از نام کاربری و رمز عبور پیش فرض زیر برای ورود استفاده کنید. 
+                            </p>
+                            <span>
+                               نام کابری : <span>mjbagheri2545</span>
+                            </span>
+                            <span>
+                               رمز عبور :  <span>javad2545bagheri</span>
+                            </span>
+                        </div>
+                       <form action="">
+                            <div class="input-group">
+                                <label for="username">
+                                    نام کاربری :
+                                 </label>
+                                 <input autocomplete="off" required oninput="userUpadate(this)" class="username" type="text" name="username" id="username">
+                            </div>
+                            <div class="input-group">
+                                <label for="password">
+                                    رمز عبور :
+                                </label>
+                                <input autocomplete="off" required oninput="passUpadate(this)" class="password" type="password" name="password" id="password">
+                            </div>
+                            <div class="sign-up-now">
+                                <p> حساب کاربری ندارید ؟ همین الان یک <a target="_blank" href="./signUp.html">حساب کاربری</a> ایجاد کنید.</p>
+                            </div>
+                            <div class="sign-up-btn">
+                                <a target="_blank" class="submit" onclick="login()" href="">
+                                    ورود
+                                </a>
+                            </div>
+                       </form>
+                       <div class="social-network-login">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-google"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="svg-container">
+                        <img src="../svg/login.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>

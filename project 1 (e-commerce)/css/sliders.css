@@ -1,0 +1,77 @@
+    /* header slider*/
+
+header .swiper 
+{
+    width: 100%;
+}
+
+header .swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+header .swiper-slide span
+{
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    transform: translateY(-50%);
+    font-size: 1.3em;
+}
+header .swiper-slide .images2
+{
+    color: #fff;
+}
+header .swiper-slide img 
+{
+    display: block;
+    width: 100%;
+}
+header .swiper .swiper-pagination
+{
+    text-align: left;
+    margin-left: 30px;
+}
+header .swiper .swiper-pagination .swiper-pagination-bullet
+{
+    background-color: #dedfe0;
+    width: 12px;
+    height: 12px;
+}
+
+    /* main section product-carousel-slider */
+
+.product-carousel-slider
+{
+    margin: 30px;
+    padding: 0 30px;
+    font-size: 1em;
+}
+.product-carousel-slider .product-carousel-slider-title
+{
+   font-size: 1.2em;
+   border-bottom: 2px solid #D43D27;
+}
+.product-carousel-slider .shopping-card
+{
+    margin: 30px 0;
+}
+.product-carousel-slider .swiper 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-carousel-slider .swiper-slide 
+ {
+    background-position: center;
+    background-size: cover;
+}
+.product-carousel-slider .swiper-slide img 
+{
+    display: block;
+    width: 80%;
+    cursor: default;
+}

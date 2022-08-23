@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="https://kit.fontawesome.com/b81d421618.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dashboard-page openMenu">
+        <div class="right-col">
+                <div class="sidebar-menu">
+                    <div class="user-profile">
+                        <div class="right">
+                            <img src="../images/profile.jpg" alt="">
+                        </div>
+                        <div class="left">
+                            <span> محمد جواد </span>
+                            <i onclick="toggleAngle()" class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="additionals-details">
+                        <div class="access-lvl">
+                            <span> سطح دسترسی : </span>
+                            <span> ادمین </span>
+                        </div>
+                        <div class="status">
+                            <span> وضعیت : </span>
+                            <span> آنلاین </span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a onclick="toggleLink(this)" href="#"><i class="fa-solid fa-store"></i> <span> محصولات </span></a>
+                        </li>
+                        <li>
+                            <a class="active" onclick="toggleLink(this)" href="#"><i class="fa-solid fa-clipboard-list"></i> <span> سفارشات </span></a>
+                        </li>
+                        <li>
+                            <a onclick="toggleLink(this)" href="#"><i class="fa-solid fa-chart-column"></i> <span> گزارشات </span></a>
+                        </li>
+                        <li>
+                            <a onclick="toggleLink(this)" href="#"><i class="fa-solid fa-headset"></i> <span> پشتیبانی </span></a>
+                        </li>
+                        <li>
+                            <a onclick="toggleLink(this)" href="#"><i class="fa-solid fa-users"></i> <span> کاربرها </span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left-col">
+                <header>
+                    <nav>
+                        <div class="right">
+                            <div class="hamburger-menu">
+                                <i onclick="toggleMenu(this)" class="fa-solid fa-bars"></i>
+                            </div>
+                            <div class="search">
+                                <i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id="">
+                            </div>
+                        </div>
+                        <div class="left">
+                            <a href="#"><i class="fa-solid fa-bell"></i></a>
+                            <a href="#"><i class="fa-solid fa-gear"></i></a>
+                            <a href="#"><i class="fa-solid fa-power-off"></i></a>
+                        </div>
+                    </nav>
+                    <div class="last-seen-lang">
+                        <span class="last-seen">
+                            آخرین ورود 2 روز پیش
+                        </span>
+                        <span class="lang">
+                            فارسی
+                        </span>
+                    </div>
+                </header>
+                <div class="holder">
+                    <ul class="details">
+                        <li>
+                            <i class="fa-solid fa-clipboard-list"></i>
+                            <div class="text">
+                                <span class="title"> تکمیل انبار </span>
+                                <span>400</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-cube"></i>
+                            <div class="text">
+                                <span class="title"> محصولات </span>
+                                <span>500</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-truck"></i>
+                            <div class="text">
+                                <span class="title"> تحویل پست </span>
+                                <span>80</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <div class="text">
+                                <span class="title"> تصویه </span>
+                                <span>450000</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="income-box">
+                        <div class="content-head">
+                            <span> درآمد </span>
+                            <i class="fa-solid fa-gear"></i>
+                            <i class="fa-solid fa-arrow-rotate-right"></i>
+                        </div>
+                        <div class="content">
+                            <canvas id="myChart" width="300" height="150"></canvas>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.0/dist/Chart.min.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

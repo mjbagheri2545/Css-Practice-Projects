@@ -1,0 +1,140 @@
+body
+{
+    min-height: 100vh;
+}
+body main
+{
+    height: 100%;
+}
+.login-page
+{
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(-45deg,#202D3A,#505462);
+   font-size: 1em;
+}
+.login-page .col-lg-8
+{
+   width: 100%;
+}
+.login-container
+{
+   padding: 25px 35px;
+   margin: 40px 30px;
+   margin-right: 60px;
+   font-size: 0.9em;
+   background-color: rgba(255, 255, 255, 0.1);
+   color: rgba(255, 255, 255, 0.9);
+   border-radius: 15px;
+}
+.login-container .hint p
+{
+    color: rgba(255, 255, 255, 0.9);
+}
+.login-container .hint > span
+{
+    display: block;
+}
+
+.login-container .hint > span span,
+.login-container .hint > span span
+{
+    font-size: 1.1em;
+    padding-right: 10px;
+}
+.login-container .input-group
+{
+   margin-top: 30px;
+
+}
+.login-container .input-group label
+{
+   display: block;
+   margin-bottom: 10px;
+}
+.login-container .input-group input
+{
+    display: block;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    margin: 15px 0;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    outline: none;
+}
+.login-container .sign-up-now
+{
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.login-container .sign-up-now a
+{
+    color: #FF6347;
+    padding: 0 5px;
+}
+.login-container .sign-up-btn
+{
+    text-align: center;
+}
+.login-container .sign-up-btn .submit
+{
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 12px 45px;
+    border-radius: 50px;
+    background-color: #FF6347;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.login-container .social-network-login
+{
+    border-top: 2px solid rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+.login-container .social-network-login a
+{
+    color: rgba(255, 255, 255, 0.9);
+}
+.login-container .social-network-login a i
+{
+    font-size: 2em;
+}
+.login-page .col-lg-4
+{
+    width: 100%;
+}
+.svg-container
+{
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.svg-container img
+{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width : 1200px){
+    .login-page .col-lg-8
+    {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .login-container
+    {
+   margin-right: 30px;
+    }
+}
