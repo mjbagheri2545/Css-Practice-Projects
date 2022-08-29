@@ -86,7 +86,7 @@ header nav .search i
   font-size: 1.2em;
   top: 50%;
   transform: translateY(-50%);
-  left: 5px;
+  left: 0px;
   color: rgba(0, 0, 0, 0.15);
 }
 header nav .search i.fa-circle-xmark
@@ -102,18 +102,23 @@ header nav .search input
   outline: none;
   border: none;
   padding: 8px 15px;
+  padding-left: 25px;
   width: 100%;
-  color: #222;
+  color: #777;
   font-size: 1.1em;
   border-radius: 5px;
 }
 header nav .search input::placeholder
 {
     font-size: 0.9em;
-    padding-left: 15px;
     opacity: 0.6;
 }
-header nav .search input:focus ~ i.fa-circle-xmark
+header nav .search input.active
+{
+  padding-left: 15px;
+  color: #222;
+}
+header nav .search input.active ~ i.fa-circle-xmark
 {
   display: block;
 }
@@ -121,7 +126,7 @@ header nav .search i.fa-circle-xmark.active
 {
   display: block;
 }
-header nav .search input:focus ~ i.fa-magnifying-glass
+header nav .search input.active ~ i.fa-magnifying-glass
 {
   display: none;
 }
@@ -129,11 +134,11 @@ header nav .search i.fa-magnifying-glass.active
 {
   display: none;
 }
-header nav .search input:focus::placeholder
+header nav .search input.active::placeholder
 {
   padding-left: 0;
 }
-header nav .search input.active::placeholder
+header nav .search input.valid::placeholder
 {
   padding-left: 0;
 }
@@ -214,7 +219,7 @@ main
 }
 main .main-container
 {
-  padding:20px;
+  padding: 0 20px;
   padding-top: 90px;
   margin: 0 auto;
   max-width: 935px;
@@ -411,7 +416,6 @@ main .main-container
   {
     padding: 0;
     padding-top: 70px;
-    padding-bottom: 20px;
   }
   .user-details .up .details
   {

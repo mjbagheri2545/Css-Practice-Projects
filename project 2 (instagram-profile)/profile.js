@@ -9,6 +9,8 @@ let details = document.querySelector('.user-details .details');
 let followers = document.querySelector('.followers');
 let posts = document.querySelector('.posts');
 let highlightHeader = document.querySelectorAll('.user-details .down a h4');
+let menu = document.querySelector('header nav .left .menu');
+let angleDown = document.querySelector('.fa-angle-down');
 let allowRunSetInterval = true;
 
 function activatePostSpan(obj){
@@ -22,11 +24,11 @@ function inputValueManager(obj){
     if(obj.value){
         closeMark.classList.add('active');
         searchIcon.classList.add('active');
-        searchInput.classList.add('active');
+        searchInput.classList.add('valid');
     }else{
         closeMark.classList.remove('active');
         searchIcon.classList.remove('active');
-        searchInput.classList.remove('active');
+        searchInput.classList.remove('valid');
     }
 }
 
@@ -38,9 +40,9 @@ function inputValueRemover(){
 function angleDownActiveToggle(obj){
     obj.classList.toggle('active');
     if(obj.classList.contains('active')){
-        document.querySelector('header nav .left .menu').style.display = 'flex';
+        menu.style.display = 'flex';
     }else{
-        document.querySelector('header nav .left .menu').style.display = 'none';
+        menu.style.display = 'none';
     }
 }
 
@@ -52,6 +54,23 @@ function highlightHeaderlengthManager(){
     })
 }
 
+function inputActiveManager(obj){
+    obj.classList.add('active');
+}
+
+document.addEventListener('click',(e)=>{
+    if(menu.style.display == 'flex'){
+        if(e.target != menu && e.target != angleDown){
+            menu.style.display = 'none';
+            angleDown.classList.remove('active');
+        }
+    }
+    if(e.target != searchInput){
+        searchInput.classList.remove('active');
+        closeMark.classList.remove('active');
+        searchIcon.classList.remove('active');
+    }
+})
 setInterval(()=>{
     if(window.innerWidth <= 735 && allowRunSetInterval == true){
         userDetailsHead.prepend(profileImg);
