@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b81d421618.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#"><img src="./public/logo.svg" alt=""></a>
+                <i onclick="angleDownActiveToggle(this)" class="fa-solid fa-angle-down"></i>
+                <div class="menu">
+                    <a href="#"><i class="fa-solid fa-user-check"></i>Following</a>
+                    <a href="#"><i class="fa-solid fa-star"></i>Favorites</a>
+                </div>
+            </div>
+            <div class="search">
+                <input oninput="inputValueManager(this)" placeholder="Search" type="text" name="" id="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i onclick="inputValueRemover(this)" class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <ul>
+                <li><i class="fa-solid fa-house"></i></li>
+                <li><i class="fa-solid fa-paper-plane"></i></li>
+                <li><i class="fa-solid fa-square-plus"></i></li>
+                <li><i class="fa-solid fa-compass"></i></li>
+                <li class="active"><i class="fa-solid fa-heart"></i></li>
+                <li><img src="./images/Lighthouse.jpg" alt=""></li>
+            </ul>
+        </nav>
+        <hr class="nav">
+    </header>
+    <main>
+        <div class="main-container">
+            <section class="user-details">
+                <div class="up">
+                    <div class="profile-img">
+                        <img src="./images/Lighthouse.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="head">
+                            <h1> Username </h1>
+                            <a href="#"> Edit profile </a>
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <div class="followers">
+                            <span>5 posts</span>
+                            <a href="#">381 followers</a>
+                            <a href="#">1,259 following</a>
+                        </div>
+                        <div class="description">
+                            <h2>Account name</h2>
+                            <span>Lorem ipsum dolor sit.</span>
+                            <span>Lorem ipsum dolor sit amet consectetur.</span>
+                            <span>Lorem, ipsum dolor.</span>
+                            <span>Lorem, ipsum.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="down">
+                    <a href="#">
+                        <img src="./images/Lighthouse.jpg" alt="">
+                        <h4>Highlight header</h4>
+                    </a>
+                    <a href="#">
+                        <img src="./images/Lighthouse.jpg" alt="">
+                        <h4>Highlight header</h4>
+                    </a>
+                </div>
+            </section>
+            <hr>
+            <section class="posts active">
+                <div class="head">
+                    <span onclick="activatePostSpan(this)" class="active"><i class="fa-solid fa-table-cells"></i>posts</span>
+                    <span onclick="activatePostSpan(this)"><i class="fa-solid fa-bookmark"></i>saved</span>
+                    <span onclick="activatePostSpan(this)"><i class="fa-solid fa-circle-user"></i>tagged</span>
+                </div>
+                <div class="post-boxs">
+                    <div class="post-box"><img src="./images/Lighthouse.jpg" alt=""></div>
+                    <div class="post-box"><img src="./images/Lighthouse.jpg" alt=""></div>
+                    <div class="post-box"><img src="./images/Lighthouse.jpg" alt=""></div>
+                    <div class="post-box"><img src="./images/Lighthouse.jpg" alt=""></div>
+                    <div class="post-box"><img src="./images/Lighthouse.jpg" alt=""></div>
+                    <div class="post-box"><img src="./images/Lighthouse.jpg" alt=""></div>
+                    <div class="post-box"><img src="./images/Lighthouse.jpg" alt=""></div>
+                    <div class="post-box"><img src="./images/Lighthouse.jpg" alt=""></div>
+                    <div class="post-box"><img src="./images/Lighthouse.jpg" alt=""></div>
+                    <div class="post-box"><img src="./images/Lighthouse.jpg" alt=""></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./profile.js"></script>
+</body>
+</html>

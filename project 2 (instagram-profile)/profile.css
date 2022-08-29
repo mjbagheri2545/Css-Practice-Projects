@@ -1,0 +1,502 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+/* header */
+
+/* nav  */
+
+header
+{
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  z-index: 10;
+}
+header nav
+{
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav .left
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+  margin-left: 5%;
+}
+header nav .left a
+{
+    display: flex;
+    align-items: center;
+}
+header nav .left a img
+{
+  width: 103px;
+  height: 29px;
+  cursor: pointer;
+}
+header nav .left i
+{
+ padding: 10px 6px;
+ font-size: 0.8em;
+ cursor: pointer;
+ opacity: 0.6;
+}
+header nav .left .menu
+{
+ position: absolute;
+ top: 125%;
+ left: -4px;
+ background-color: #fff;
+ display: none;
+ flex-direction: column;
+ justify-content: center;
+ padding: 0 10px;
+ border-radius: 5px;
+}
+header nav .left .menu a
+{
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 5px;
+}
+header nav .left .menu a i
+{
+  padding-right: 15px;
+} 
+header nav .search
+{
+  position: relative;
+  margin-left: 5%;
+}
+header nav .search i
+{
+  position: absolute;
+  font-size: 1.2em;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  color: rgba(0, 0, 0, 0.15);
+}
+header nav .search i.fa-circle-xmark
+{
+  left: calc(100% - 25px);
+  color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: none;
+}
+header nav .search input
+{
+  background-color: rgba(0, 0, 0, 0.06);
+  outline: none;
+  border: none;
+  padding: 8px 15px;
+  width: 100%;
+  color: #222;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+header nav .search input::placeholder
+{
+    font-size: 0.9em;
+    padding-left: 15px;
+    opacity: 0.6;
+}
+header nav .search input:focus ~ i.fa-circle-xmark
+{
+  display: block;
+}
+header nav .search i.fa-circle-xmark.active
+{
+  display: block;
+}
+header nav .search input:focus ~ i.fa-magnifying-glass
+{
+  display: none;
+}
+header nav .search i.fa-magnifying-glass.active
+{
+  display: none;
+}
+header nav .search input:focus::placeholder
+{
+  padding-left: 0;
+}
+header nav .search input.active::placeholder
+{
+  padding-left: 0;
+}
+header nav ul
+{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 15px;
+}
+header nav ul li
+{
+  list-style: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+header nav ul li:not(:first-child)
+{
+  margin-left: 20px;
+}
+header nav ul li i
+{
+  font-size: 1.5em;
+  cursor: pointer;
+}
+header nav ul li:last-child img
+{
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+header nav ul li.active:not(:last-child)::before
+{
+    content: " ";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ff3041;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 125%;
+}
+header nav ul li:nth-child(2)::after
+{
+    content: "1";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #ff3041;
+    left: 60%;
+    top: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+hr
+{
+  border: none;
+  outline: none;
+  border-top: 0.01px solid rgba(0, 0, 0, 0.16);
+  margin: 0;
+}
+
+/* main */
+
+/* .user-details */
+main
+{
+  font-size: 1em;
+}
+main .main-container
+{
+  padding:20px;
+  padding-top: 90px;
+  margin: 0 auto;
+  max-width: 935px;
+}
+.user-details .up
+{
+  display: flex;
+  align-items: center;
+}
+.user-details .up .details
+{
+  padding-left: 40px;
+}
+.user-details .up .details .head
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.user-details .up .details .head h1
+{
+  font-size: 1.5em;
+  font-weight: normal;
+}
+.user-details .up .details .head a
+{
+  margin-left: 25px;
+  text-decoration: none;
+  color: #222;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 6px 14px;
+}
+.user-details .up .details .head i
+{
+  margin-left: 25px;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+.user-details .up .details .followers
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.user-details .up .details .followers span
+{
+  color: #222;
+}
+.user-details .up .details .followers a
+{
+  margin-left: 50px;
+  text-decoration: none;
+  color: #222;
+}
+.user-details .up .details .description
+{
+  line-height: 1.4em;
+}
+.user-details .up .details .description h2
+{
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1.4em;
+}
+.user-details .up .details .description span
+{
+  display: block;
+}
+.user-details .up .profile-img
+{
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 31.5%;
+  max-width: 290px;
+}
+.user-details .up .profile-img img
+{
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.user-details .down
+{
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.user-details .down a
+{
+  text-decoration: none;
+  color: #222;
+  margin-left: 30px;
+}
+.user-details .down a img
+{
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.user-details .down a h4
+{
+  font-size: 0.9em;
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+/* .posts */
+
+.posts .head
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.posts .head span
+{
+  text-decoration: none;
+  color: rgba(0,0,0,0.6);
+  padding-top: 15px;
+  margin-bottom: 15px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.posts .head span.active
+{
+  color: #222;
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+}
+.posts .head span i
+{
+  padding-right: 8px;
+}
+.posts .post-boxs
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.posts .post-boxs .post-box
+{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.posts .post-boxs .post-box:hover::before
+{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+.posts .post-boxs img
+{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 640px){
+  header nav
+  {
+    justify-content: space-between;
+  }
+  header nav .search
+  {
+    display: none;
+  }
+}
+@media screen and (max-width: 735px){
+  main .main-container
+  {
+    padding: 0;
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+  .user-details .up .details
+  {
+    padding: 0 15px;
+  }
+  .user-details .up .details .head
+  {
+    align-items: flex-start;
+    position: relative;
+  }
+  .user-details .up .details .head i,
+  .user-details .up .details .head h1
+  {
+    margin-top: 5px;
+  }
+  .user-details .up .details .head .profile-img
+  {
+    width: fit-content;
+    max-width: none;
+  }
+  .user-details .up .details .head .profile-img img
+  {
+    width: 75px;
+    height: 75px;
+    margin-right: 30px;
+  }
+  .user-details .up .details .head a
+  {
+    display: block;
+    text-align: center;
+    order: 1;
+    width: 90%;
+    position: absolute;
+    left: 30%;
+    top: 60%;
+  }
+  .user-details .down
+  {
+    margin-top: 20px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
+  .user-details .down a
+  {
+    margin: 0 5px;
+  }
+  .user-details .down a img
+  {
+    width: 55px;
+    height: 55px;
+  } 
+  .user-details .down a h4
+  {
+    font-size: 0.8em;
+  }
+  .posts .followers
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+  .posts .followers a
+  {
+    text-decoration: none;
+    color: #222;
+  }
+  .posts .head
+  {
+    justify-content: flex-start;
+    gap: 0;
+  }
+  .posts .head span
+  {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  .posts .head span.active
+  {
+    color: #0095f6;
+  }
+  .posts .post-boxs
+  {
+    gap: 4px;
+  }
+}
